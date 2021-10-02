@@ -1,0 +1,7 @@
+D:\Projects\PSoC\AdvancedMicrocontrollers\CounterMachine.cydsn\CounterMachine.cyprj|193d96f1-5559-452f-b4f2-a8d39fa32f95
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|6e373501-7fba-42bc-bc87-3bb486117256
+C:\Users\adria\OneDrive\Documentos\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|76a6a44a-3416-4bc7-a4b7-b5d5fce8dba0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|afa2b651-8255-4045-8709-32ec8d495523
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|8e732ded-7d4e-4562-a0a4-d12ee083eb33
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|19a3fbff-03b4-465d-b7ff-081c91a646c5
+D:\Projects\PSoC\AdvancedMicrocontrollers\Keyboard.cydsn\Keyboard.cyprj|a85f0d02-b4fb-49f3-bea6-09a0a8e510fc

@@ -1,0 +1,14 @@
+--------------- Build Started: 10/01/2021 21:02:33 Project: Keyboard, Configuration: ARM GCC 5.4-2016-q2-update Release ---------------
+The code generation step is up to date.
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/main.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c main.c -o .\CortexM3\ARM_GCC_541\Release\main.o
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Release\Keyboard.a .\CortexM3\ARM_GCC_541\Release\Columns.o .\CortexM3\ARM_GCC_541\Release\Rows.o .\CortexM3\ARM_GCC_541\Release\LCD.o .\CortexM3\ARM_GCC_541\Release\LCD_PM.o .\CortexM3\ARM_GCC_541\Release\LCD_LCDPort.o .\CortexM3\ARM_GCC_541\Release\CyDmac.o .\CortexM3\ARM_GCC_541\Release\CyFlash.o .\CortexM3\ARM_GCC_541\Release\CyLib.o .\CortexM3\ARM_GCC_541\Release\cyPm.o .\CortexM3\ARM_GCC_541\Release\CySpc.o .\CortexM3\ARM_GCC_541\Release\cyutils.o .\CortexM3\ARM_GCC_541\Release\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Release\isr_Start.o .\CortexM3\ARM_GCC_541\Release\Timer.o .\CortexM3\ARM_GCC_541\Release\Timer_PM.o .\CortexM3\ARM_GCC_541\Release\Clock_1.o .\CortexM3\ARM_GCC_541\Release\isr_Cambio.o .\CortexM3\ARM_GCC_541\Release\CyBootAsmGnu.o
+arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_541\Release\Keyboard.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o D:\Projects\PSoC\AdvancedMicrocontrollers\Keyboard.cydsn\CortexM3\ARM_GCC_541\Release\Keyboard.elf .\CortexM3\ARM_GCC_541\Release\main.o .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o .\CortexM3\ARM_GCC_541\Release\cymetadata.o .\CortexM3\ARM_GCC_541\Release\Cm3Start.o .\CortexM3\ARM_GCC_541\Release\Keyboard.a "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Release\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_541\Release/Keyboard.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Os -ffat-lto-objects -Wl,--end-group
+cyelftool.exe -C D:\Projects\PSoC\AdvancedMicrocontrollers\Keyboard.cydsn\CortexM3\ARM_GCC_541\Release\Keyboard.elf --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
+No ELF section .cychecksum found, creating one
+Application checksum calculated and stored in ELF section .cychecksum
+Checksum calculated and stored in ELF section .cymeta
+cyelftool.exe -S D:\Projects\PSoC\AdvancedMicrocontrollers\Keyboard.cydsn\CortexM3\ARM_GCC_541\Release\Keyboard.elf
+Flash used: 2968 of 262144 bytes (1.1%).
+SRAM used: 2545 of 65536 bytes (3.9%). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Build Succeeded: 10/01/2021 21:02:34 ---------------

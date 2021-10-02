@@ -1,0 +1,822 @@
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 4
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"Columns.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Columns_Write,"ax",%progbits
+  20              		.align	1
+  21              		.global	Columns_Write
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	Columns_Write, %function
+  25              	Columns_Write:
+  26              	.LFB0:
+  27              		.file 1 "Generated_Source\\PSoC5\\Columns.c"
+   1:Generated_Source\PSoC5/Columns.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/Columns.c **** * File Name: Columns.c  
+   3:Generated_Source\PSoC5/Columns.c **** * Version 2.20
+   4:Generated_Source\PSoC5/Columns.c **** *
+   5:Generated_Source\PSoC5/Columns.c **** * Description:
+   6:Generated_Source\PSoC5/Columns.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:Generated_Source\PSoC5/Columns.c **** *
+   8:Generated_Source\PSoC5/Columns.c **** * Note:
+   9:Generated_Source\PSoC5/Columns.c **** *
+  10:Generated_Source\PSoC5/Columns.c **** ********************************************************************************
+  11:Generated_Source\PSoC5/Columns.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC5/Columns.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:Generated_Source\PSoC5/Columns.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:Generated_Source\PSoC5/Columns.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC5/Columns.c **** *******************************************************************************/
+  16:Generated_Source\PSoC5/Columns.c **** 
+  17:Generated_Source\PSoC5/Columns.c **** #include "cytypes.h"
+  18:Generated_Source\PSoC5/Columns.c **** #include "Columns.h"
+  19:Generated_Source\PSoC5/Columns.c **** 
+  20:Generated_Source\PSoC5/Columns.c **** /* APIs are not generated for P15[7:6] on PSoC 5 */
+  21:Generated_Source\PSoC5/Columns.c **** #if !(CY_PSOC5A &&\
+  22:Generated_Source\PSoC5/Columns.c **** 	 Columns__PORT == 15 && ((Columns__MASK & 0xC0) != 0))
+  23:Generated_Source\PSoC5/Columns.c **** 
+  24:Generated_Source\PSoC5/Columns.c **** 
+  25:Generated_Source\PSoC5/Columns.c **** /*******************************************************************************
+  26:Generated_Source\PSoC5/Columns.c **** * Function Name: Columns_Write
+  27:Generated_Source\PSoC5/Columns.c **** ****************************************************************************//**
+  28:Generated_Source\PSoC5/Columns.c **** *
+  29:Generated_Source\PSoC5/Columns.c **** * \brief Writes the value to the physical port (data output register), masking
+  30:Generated_Source\PSoC5/Columns.c **** *  and shifting the bits appropriately. 
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 2
+
+
+  31:Generated_Source\PSoC5/Columns.c **** *
+  32:Generated_Source\PSoC5/Columns.c **** * The data output register controls the signal applied to the physical pin in 
+  33:Generated_Source\PSoC5/Columns.c **** * conjunction with the drive mode parameter. This function avoids changing 
+  34:Generated_Source\PSoC5/Columns.c **** * other bits in the port by using the appropriate method (read-modify-write or
+  35:Generated_Source\PSoC5/Columns.c **** * bit banding).
+  36:Generated_Source\PSoC5/Columns.c **** *
+  37:Generated_Source\PSoC5/Columns.c **** * <b>Note</b> This function should not be used on a hardware digital output pin 
+  38:Generated_Source\PSoC5/Columns.c **** * as it is driven by the hardware signal attached to it.
+  39:Generated_Source\PSoC5/Columns.c **** *
+  40:Generated_Source\PSoC5/Columns.c **** * \param value
+  41:Generated_Source\PSoC5/Columns.c **** *  Value to write to the component instance.
+  42:Generated_Source\PSoC5/Columns.c **** *
+  43:Generated_Source\PSoC5/Columns.c **** * \return 
+  44:Generated_Source\PSoC5/Columns.c **** *  None 
+  45:Generated_Source\PSoC5/Columns.c **** *
+  46:Generated_Source\PSoC5/Columns.c **** * \sideeffect
+  47:Generated_Source\PSoC5/Columns.c **** *  If you use read-modify-write operations that are not atomic; the Interrupt 
+  48:Generated_Source\PSoC5/Columns.c **** *  Service Routines (ISR) can cause corruption of this function. An ISR that 
+  49:Generated_Source\PSoC5/Columns.c **** *  interrupts this function and performs writes to the Pins component data 
+  50:Generated_Source\PSoC5/Columns.c **** *  register can cause corrupted port data. To avoid this issue, you should 
+  51:Generated_Source\PSoC5/Columns.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
+  52:Generated_Source\PSoC5/Columns.c **** *  this function.
+  53:Generated_Source\PSoC5/Columns.c **** *
+  54:Generated_Source\PSoC5/Columns.c **** * \funcusage
+  55:Generated_Source\PSoC5/Columns.c **** *  \snippet Columns_SUT.c usage_Columns_Write
+  56:Generated_Source\PSoC5/Columns.c **** *******************************************************************************/
+  57:Generated_Source\PSoC5/Columns.c **** void Columns_Write(uint8 value)
+  58:Generated_Source\PSoC5/Columns.c **** {
+  28              		.loc 1 58 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.LVL0:
+  59:Generated_Source\PSoC5/Columns.c ****     uint8 staticBits = (Columns_DR & (uint8)(~Columns_MASK));
+  34              		.loc 1 59 0
+  35 0000 044A     		ldr	r2, .L2
+  36 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  37              	.LVL1:
+  60:Generated_Source\PSoC5/Columns.c ****     Columns_DR = staticBits | ((uint8)(value << Columns_SHIFT) & Columns_MASK);
+  38              		.loc 1 60 0
+  39 0004 03F00F03 		and	r3, r3, #15
+  40              	.LVL2:
+  41 0008 43EA0010 		orr	r0, r3, r0, lsl #4
+  42              	.LVL3:
+  43 000c C0B2     		uxtb	r0, r0
+  44 000e 1070     		strb	r0, [r2]
+  45 0010 7047     		bx	lr
+  46              	.L3:
+  47 0012 00BF     		.align	2
+  48              	.L2:
+  49 0014 10510040 		.word	1073762576
+  50              		.cfi_endproc
+  51              	.LFE0:
+  52              		.size	Columns_Write, .-Columns_Write
+  53              		.section	.text.Columns_SetDriveMode,"ax",%progbits
+  54              		.align	1
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 3
+
+
+  55              		.global	Columns_SetDriveMode
+  56              		.thumb
+  57              		.thumb_func
+  58              		.type	Columns_SetDriveMode, %function
+  59              	Columns_SetDriveMode:
+  60              	.LFB1:
+  61:Generated_Source\PSoC5/Columns.c **** }
+  62:Generated_Source\PSoC5/Columns.c **** 
+  63:Generated_Source\PSoC5/Columns.c **** 
+  64:Generated_Source\PSoC5/Columns.c **** /*******************************************************************************
+  65:Generated_Source\PSoC5/Columns.c **** * Function Name: Columns_SetDriveMode
+  66:Generated_Source\PSoC5/Columns.c **** ****************************************************************************//**
+  67:Generated_Source\PSoC5/Columns.c **** *
+  68:Generated_Source\PSoC5/Columns.c **** * \brief Sets the drive mode for each of the Pins component's pins.
+  69:Generated_Source\PSoC5/Columns.c **** * 
+  70:Generated_Source\PSoC5/Columns.c **** * <b>Note</b> This affects all pins in the Pins component instance. Use the
+  71:Generated_Source\PSoC5/Columns.c **** * Per-Pin APIs if you wish to control individual pin's drive modes.
+  72:Generated_Source\PSoC5/Columns.c **** *
+  73:Generated_Source\PSoC5/Columns.c **** * \param mode
+  74:Generated_Source\PSoC5/Columns.c **** *  Mode for the selected signals. Valid options are documented in 
+  75:Generated_Source\PSoC5/Columns.c **** *  \ref driveMode.
+  76:Generated_Source\PSoC5/Columns.c **** *
+  77:Generated_Source\PSoC5/Columns.c **** * \return
+  78:Generated_Source\PSoC5/Columns.c **** *  None
+  79:Generated_Source\PSoC5/Columns.c **** *
+  80:Generated_Source\PSoC5/Columns.c **** * \sideeffect
+  81:Generated_Source\PSoC5/Columns.c **** *  If you use read-modify-write operations that are not atomic, the ISR can
+  82:Generated_Source\PSoC5/Columns.c **** *  cause corruption of this function. An ISR that interrupts this function 
+  83:Generated_Source\PSoC5/Columns.c **** *  and performs writes to the Pins component Drive Mode registers can cause 
+  84:Generated_Source\PSoC5/Columns.c **** *  corrupted port data. To avoid this issue, you should either use the Per-Pin
+  85:Generated_Source\PSoC5/Columns.c **** *  APIs (primary method) or disable interrupts around this function.
+  86:Generated_Source\PSoC5/Columns.c **** *
+  87:Generated_Source\PSoC5/Columns.c **** * \funcusage
+  88:Generated_Source\PSoC5/Columns.c **** *  \snippet Columns_SUT.c usage_Columns_SetDriveMode
+  89:Generated_Source\PSoC5/Columns.c **** *******************************************************************************/
+  90:Generated_Source\PSoC5/Columns.c **** void Columns_SetDriveMode(uint8 mode)
+  91:Generated_Source\PSoC5/Columns.c **** {
+  61              		.loc 1 91 0
+  62              		.cfi_startproc
+  63              		@ args = 0, pretend = 0, frame = 0
+  64              		@ frame_needed = 0, uses_anonymous_args = 0
+  65              		@ link register save eliminated.
+  66              	.LVL4:
+  92:Generated_Source\PSoC5/Columns.c **** 	CyPins_SetPinDriveMode(Columns_0, mode);
+  67              		.loc 1 92 0
+  68 0000 0B4A     		ldr	r2, .L5
+  69 0002 00F00E00 		and	r0, r0, #14
+  70              	.LVL5:
+  71 0006 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  72 0008 03F0F103 		and	r3, r3, #241
+  73 000c 0343     		orrs	r3, r3, r0
+  74 000e 1370     		strb	r3, [r2]
+  93:Generated_Source\PSoC5/Columns.c **** 	CyPins_SetPinDriveMode(Columns_1, mode);
+  75              		.loc 1 93 0
+  76 0010 5378     		ldrb	r3, [r2, #1]	@ zero_extendqisi2
+  77 0012 03F0F103 		and	r3, r3, #241
+  78 0016 0343     		orrs	r3, r3, r0
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 4
+
+
+  79 0018 5370     		strb	r3, [r2, #1]
+  94:Generated_Source\PSoC5/Columns.c **** 	CyPins_SetPinDriveMode(Columns_2, mode);
+  80              		.loc 1 94 0
+  81 001a 9378     		ldrb	r3, [r2, #2]	@ zero_extendqisi2
+  82 001c 03F0F103 		and	r3, r3, #241
+  83 0020 0343     		orrs	r3, r3, r0
+  84 0022 9370     		strb	r3, [r2, #2]
+  95:Generated_Source\PSoC5/Columns.c **** 	CyPins_SetPinDriveMode(Columns_3, mode);
+  85              		.loc 1 95 0
+  86 0024 D378     		ldrb	r3, [r2, #3]	@ zero_extendqisi2
+  87 0026 03F0F103 		and	r3, r3, #241
+  88 002a 1843     		orrs	r0, r0, r3
+  89 002c D070     		strb	r0, [r2, #3]
+  90 002e 7047     		bx	lr
+  91              	.L6:
+  92              		.align	2
+  93              	.L5:
+  94 0030 0C500040 		.word	1073762316
+  95              		.cfi_endproc
+  96              	.LFE1:
+  97              		.size	Columns_SetDriveMode, .-Columns_SetDriveMode
+  98              		.section	.text.Columns_Read,"ax",%progbits
+  99              		.align	1
+ 100              		.global	Columns_Read
+ 101              		.thumb
+ 102              		.thumb_func
+ 103              		.type	Columns_Read, %function
+ 104              	Columns_Read:
+ 105              	.LFB2:
+  96:Generated_Source\PSoC5/Columns.c **** }
+  97:Generated_Source\PSoC5/Columns.c **** 
+  98:Generated_Source\PSoC5/Columns.c **** 
+  99:Generated_Source\PSoC5/Columns.c **** /*******************************************************************************
+ 100:Generated_Source\PSoC5/Columns.c **** * Function Name: Columns_Read
+ 101:Generated_Source\PSoC5/Columns.c **** ****************************************************************************//**
+ 102:Generated_Source\PSoC5/Columns.c **** *
+ 103:Generated_Source\PSoC5/Columns.c **** * \brief Reads the associated physical port (pin status register) and masks 
+ 104:Generated_Source\PSoC5/Columns.c **** *  the required bits according to the width and bit position of the component
+ 105:Generated_Source\PSoC5/Columns.c **** *  instance. 
+ 106:Generated_Source\PSoC5/Columns.c **** *
+ 107:Generated_Source\PSoC5/Columns.c **** * The pin's status register returns the current logic level present on the 
+ 108:Generated_Source\PSoC5/Columns.c **** * physical pin.
+ 109:Generated_Source\PSoC5/Columns.c **** *
+ 110:Generated_Source\PSoC5/Columns.c **** * \return 
+ 111:Generated_Source\PSoC5/Columns.c **** *  The current value for the pins in the component as a right justified number.
+ 112:Generated_Source\PSoC5/Columns.c **** *
+ 113:Generated_Source\PSoC5/Columns.c **** * \funcusage
+ 114:Generated_Source\PSoC5/Columns.c **** *  \snippet Columns_SUT.c usage_Columns_Read  
+ 115:Generated_Source\PSoC5/Columns.c **** *******************************************************************************/
+ 116:Generated_Source\PSoC5/Columns.c **** uint8 Columns_Read(void)
+ 117:Generated_Source\PSoC5/Columns.c **** {
+ 106              		.loc 1 117 0
+ 107              		.cfi_startproc
+ 108              		@ args = 0, pretend = 0, frame = 0
+ 109              		@ frame_needed = 0, uses_anonymous_args = 0
+ 110              		@ link register save eliminated.
+ 118:Generated_Source\PSoC5/Columns.c ****     return (Columns_PS & Columns_MASK) >> Columns_SHIFT;
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 5
+
+
+ 111              		.loc 1 118 0
+ 112 0000 014B     		ldr	r3, .L8
+ 113 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 119:Generated_Source\PSoC5/Columns.c **** }
+ 114              		.loc 1 119 0
+ 115 0004 0009     		lsrs	r0, r0, #4
+ 116 0006 7047     		bx	lr
+ 117              	.L9:
+ 118              		.align	2
+ 119              	.L8:
+ 120 0008 11510040 		.word	1073762577
+ 121              		.cfi_endproc
+ 122              	.LFE2:
+ 123              		.size	Columns_Read, .-Columns_Read
+ 124              		.section	.text.Columns_ReadDataReg,"ax",%progbits
+ 125              		.align	1
+ 126              		.global	Columns_ReadDataReg
+ 127              		.thumb
+ 128              		.thumb_func
+ 129              		.type	Columns_ReadDataReg, %function
+ 130              	Columns_ReadDataReg:
+ 131              	.LFB3:
+ 120:Generated_Source\PSoC5/Columns.c **** 
+ 121:Generated_Source\PSoC5/Columns.c **** 
+ 122:Generated_Source\PSoC5/Columns.c **** /*******************************************************************************
+ 123:Generated_Source\PSoC5/Columns.c **** * Function Name: Columns_ReadDataReg
+ 124:Generated_Source\PSoC5/Columns.c **** ****************************************************************************//**
+ 125:Generated_Source\PSoC5/Columns.c **** *
+ 126:Generated_Source\PSoC5/Columns.c **** * \brief Reads the associated physical port's data output register and masks 
+ 127:Generated_Source\PSoC5/Columns.c **** *  the correct bits according to the width and bit position of the component 
+ 128:Generated_Source\PSoC5/Columns.c **** *  instance. 
+ 129:Generated_Source\PSoC5/Columns.c **** *
+ 130:Generated_Source\PSoC5/Columns.c **** * The data output register controls the signal applied to the physical pin in 
+ 131:Generated_Source\PSoC5/Columns.c **** * conjunction with the drive mode parameter. This is not the same as the 
+ 132:Generated_Source\PSoC5/Columns.c **** * preferred Columns_Read() API because the 
+ 133:Generated_Source\PSoC5/Columns.c **** * Columns_ReadDataReg() reads the data register instead of the status 
+ 134:Generated_Source\PSoC5/Columns.c **** * register. For output pins this is a useful function to determine the value 
+ 135:Generated_Source\PSoC5/Columns.c **** * just written to the pin.
+ 136:Generated_Source\PSoC5/Columns.c **** *
+ 137:Generated_Source\PSoC5/Columns.c **** * \return 
+ 138:Generated_Source\PSoC5/Columns.c **** *  The current value of the data register masked and shifted into a right 
+ 139:Generated_Source\PSoC5/Columns.c **** *  justified number for the component instance.
+ 140:Generated_Source\PSoC5/Columns.c **** *
+ 141:Generated_Source\PSoC5/Columns.c **** * \funcusage
+ 142:Generated_Source\PSoC5/Columns.c **** *  \snippet Columns_SUT.c usage_Columns_ReadDataReg 
+ 143:Generated_Source\PSoC5/Columns.c **** *******************************************************************************/
+ 144:Generated_Source\PSoC5/Columns.c **** uint8 Columns_ReadDataReg(void)
+ 145:Generated_Source\PSoC5/Columns.c **** {
+ 132              		.loc 1 145 0
+ 133              		.cfi_startproc
+ 134              		@ args = 0, pretend = 0, frame = 0
+ 135              		@ frame_needed = 0, uses_anonymous_args = 0
+ 136              		@ link register save eliminated.
+ 146:Generated_Source\PSoC5/Columns.c ****     return (Columns_DR & Columns_MASK) >> Columns_SHIFT;
+ 137              		.loc 1 146 0
+ 138 0000 014B     		ldr	r3, .L11
+ 139 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 6
+
+
+ 147:Generated_Source\PSoC5/Columns.c **** }
+ 140              		.loc 1 147 0
+ 141 0004 0009     		lsrs	r0, r0, #4
+ 142 0006 7047     		bx	lr
+ 143              	.L12:
+ 144              		.align	2
+ 145              	.L11:
+ 146 0008 10510040 		.word	1073762576
+ 147              		.cfi_endproc
+ 148              	.LFE3:
+ 149              		.size	Columns_ReadDataReg, .-Columns_ReadDataReg
+ 150              		.text
+ 151              	.Letext0:
+ 152              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 153              		.section	.debug_info,"",%progbits
+ 154              	.Ldebug_info0:
+ 155 0000 1D010000 		.4byte	0x11d
+ 156 0004 0400     		.2byte	0x4
+ 157 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 158 000a 04       		.byte	0x4
+ 159 000b 01       		.uleb128 0x1
+ 160 000c DC000000 		.4byte	.LASF20
+ 161 0010 0C       		.byte	0xc
+ 162 0011 92010000 		.4byte	.LASF21
+ 163 0015 7B000000 		.4byte	.LASF22
+ 164 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 165 001d 00000000 		.4byte	0
+ 166 0021 00000000 		.4byte	.Ldebug_line0
+ 167 0025 02       		.uleb128 0x2
+ 168 0026 01       		.byte	0x1
+ 169 0027 06       		.byte	0x6
+ 170 0028 BC010000 		.4byte	.LASF0
+ 171 002c 02       		.uleb128 0x2
+ 172 002d 01       		.byte	0x1
+ 173 002e 08       		.byte	0x8
+ 174 002f 43000000 		.4byte	.LASF1
+ 175 0033 02       		.uleb128 0x2
+ 176 0034 02       		.byte	0x2
+ 177 0035 05       		.byte	0x5
+ 178 0036 82010000 		.4byte	.LASF2
+ 179 003a 02       		.uleb128 0x2
+ 180 003b 02       		.byte	0x2
+ 181 003c 07       		.byte	0x7
+ 182 003d 68000000 		.4byte	.LASF3
+ 183 0041 02       		.uleb128 0x2
+ 184 0042 04       		.byte	0x4
+ 185 0043 05       		.byte	0x5
+ 186 0044 B3010000 		.4byte	.LASF4
+ 187 0048 02       		.uleb128 0x2
+ 188 0049 04       		.byte	0x4
+ 189 004a 07       		.byte	0x7
+ 190 004b 56000000 		.4byte	.LASF5
+ 191 004f 02       		.uleb128 0x2
+ 192 0050 08       		.byte	0x8
+ 193 0051 05       		.byte	0x5
+ 194 0052 6F010000 		.4byte	.LASF6
+ 195 0056 02       		.uleb128 0x2
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 7
+
+
+ 196 0057 08       		.byte	0x8
+ 197 0058 07       		.byte	0x7
+ 198 0059 2C000000 		.4byte	.LASF7
+ 199 005d 03       		.uleb128 0x3
+ 200 005e 04       		.byte	0x4
+ 201 005f 05       		.byte	0x5
+ 202 0060 696E7400 		.ascii	"int\000"
+ 203 0064 02       		.uleb128 0x2
+ 204 0065 04       		.byte	0x4
+ 205 0066 07       		.byte	0x7
+ 206 0067 BB000000 		.4byte	.LASF8
+ 207 006b 04       		.uleb128 0x4
+ 208 006c 8C010000 		.4byte	.LASF12
+ 209 0070 02       		.byte	0x2
+ 210 0071 E801     		.2byte	0x1e8
+ 211 0073 2C000000 		.4byte	0x2c
+ 212 0077 02       		.uleb128 0x2
+ 213 0078 04       		.byte	0x4
+ 214 0079 04       		.byte	0x4
+ 215 007a 26000000 		.4byte	.LASF9
+ 216 007e 02       		.uleb128 0x2
+ 217 007f 08       		.byte	0x8
+ 218 0080 04       		.byte	0x4
+ 219 0081 B4000000 		.4byte	.LASF10
+ 220 0085 02       		.uleb128 0x2
+ 221 0086 01       		.byte	0x1
+ 222 0087 08       		.byte	0x8
+ 223 0088 7D010000 		.4byte	.LASF11
+ 224 008c 04       		.uleb128 0x4
+ 225 008d 51000000 		.4byte	.LASF13
+ 226 0091 02       		.byte	0x2
+ 227 0092 9202     		.2byte	0x292
+ 228 0094 98000000 		.4byte	0x98
+ 229 0098 05       		.uleb128 0x5
+ 230 0099 6B000000 		.4byte	0x6b
+ 231 009d 06       		.uleb128 0x6
+ 232 009e D5010000 		.4byte	.LASF14
+ 233 00a2 01       		.byte	0x1
+ 234 00a3 39       		.byte	0x39
+ 235 00a4 00000000 		.4byte	.LFB0
+ 236 00a8 18000000 		.4byte	.LFE0-.LFB0
+ 237 00ac 01       		.uleb128 0x1
+ 238 00ad 9C       		.byte	0x9c
+ 239 00ae D1000000 		.4byte	0xd1
+ 240 00b2 07       		.uleb128 0x7
+ 241 00b3 15000000 		.4byte	.LASF16
+ 242 00b7 01       		.byte	0x1
+ 243 00b8 39       		.byte	0x39
+ 244 00b9 6B000000 		.4byte	0x6b
+ 245 00bd 00000000 		.4byte	.LLST0
+ 246 00c1 08       		.uleb128 0x8
+ 247 00c2 1B000000 		.4byte	.LASF23
+ 248 00c6 01       		.byte	0x1
+ 249 00c7 3B       		.byte	0x3b
+ 250 00c8 6B000000 		.4byte	0x6b
+ 251 00cc 21000000 		.4byte	.LLST1
+ 252 00d0 00       		.byte	0
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 8
+
+
+ 253 00d1 06       		.uleb128 0x6
+ 254 00d2 00000000 		.4byte	.LASF15
+ 255 00d6 01       		.byte	0x1
+ 256 00d7 5A       		.byte	0x5a
+ 257 00d8 00000000 		.4byte	.LFB1
+ 258 00dc 34000000 		.4byte	.LFE1-.LFB1
+ 259 00e0 01       		.uleb128 0x1
+ 260 00e1 9C       		.byte	0x9c
+ 261 00e2 F6000000 		.4byte	0xf6
+ 262 00e6 07       		.uleb128 0x7
+ 263 00e7 6A010000 		.4byte	.LASF17
+ 264 00eb 01       		.byte	0x1
+ 265 00ec 5A       		.byte	0x5a
+ 266 00ed 6B000000 		.4byte	0x6b
+ 267 00f1 38000000 		.4byte	.LLST2
+ 268 00f5 00       		.byte	0
+ 269 00f6 09       		.uleb128 0x9
+ 270 00f7 C8010000 		.4byte	.LASF18
+ 271 00fb 01       		.byte	0x1
+ 272 00fc 74       		.byte	0x74
+ 273 00fd 6B000000 		.4byte	0x6b
+ 274 0101 00000000 		.4byte	.LFB2
+ 275 0105 0C000000 		.4byte	.LFE2-.LFB2
+ 276 0109 01       		.uleb128 0x1
+ 277 010a 9C       		.byte	0x9c
+ 278 010b 09       		.uleb128 0x9
+ 279 010c C8000000 		.4byte	.LASF19
+ 280 0110 01       		.byte	0x1
+ 281 0111 90       		.byte	0x90
+ 282 0112 6B000000 		.4byte	0x6b
+ 283 0116 00000000 		.4byte	.LFB3
+ 284 011a 0C000000 		.4byte	.LFE3-.LFB3
+ 285 011e 01       		.uleb128 0x1
+ 286 011f 9C       		.byte	0x9c
+ 287 0120 00       		.byte	0
+ 288              		.section	.debug_abbrev,"",%progbits
+ 289              	.Ldebug_abbrev0:
+ 290 0000 01       		.uleb128 0x1
+ 291 0001 11       		.uleb128 0x11
+ 292 0002 01       		.byte	0x1
+ 293 0003 25       		.uleb128 0x25
+ 294 0004 0E       		.uleb128 0xe
+ 295 0005 13       		.uleb128 0x13
+ 296 0006 0B       		.uleb128 0xb
+ 297 0007 03       		.uleb128 0x3
+ 298 0008 0E       		.uleb128 0xe
+ 299 0009 1B       		.uleb128 0x1b
+ 300 000a 0E       		.uleb128 0xe
+ 301 000b 55       		.uleb128 0x55
+ 302 000c 17       		.uleb128 0x17
+ 303 000d 11       		.uleb128 0x11
+ 304 000e 01       		.uleb128 0x1
+ 305 000f 10       		.uleb128 0x10
+ 306 0010 17       		.uleb128 0x17
+ 307 0011 00       		.byte	0
+ 308 0012 00       		.byte	0
+ 309 0013 02       		.uleb128 0x2
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 9
+
+
+ 310 0014 24       		.uleb128 0x24
+ 311 0015 00       		.byte	0
+ 312 0016 0B       		.uleb128 0xb
+ 313 0017 0B       		.uleb128 0xb
+ 314 0018 3E       		.uleb128 0x3e
+ 315 0019 0B       		.uleb128 0xb
+ 316 001a 03       		.uleb128 0x3
+ 317 001b 0E       		.uleb128 0xe
+ 318 001c 00       		.byte	0
+ 319 001d 00       		.byte	0
+ 320 001e 03       		.uleb128 0x3
+ 321 001f 24       		.uleb128 0x24
+ 322 0020 00       		.byte	0
+ 323 0021 0B       		.uleb128 0xb
+ 324 0022 0B       		.uleb128 0xb
+ 325 0023 3E       		.uleb128 0x3e
+ 326 0024 0B       		.uleb128 0xb
+ 327 0025 03       		.uleb128 0x3
+ 328 0026 08       		.uleb128 0x8
+ 329 0027 00       		.byte	0
+ 330 0028 00       		.byte	0
+ 331 0029 04       		.uleb128 0x4
+ 332 002a 16       		.uleb128 0x16
+ 333 002b 00       		.byte	0
+ 334 002c 03       		.uleb128 0x3
+ 335 002d 0E       		.uleb128 0xe
+ 336 002e 3A       		.uleb128 0x3a
+ 337 002f 0B       		.uleb128 0xb
+ 338 0030 3B       		.uleb128 0x3b
+ 339 0031 05       		.uleb128 0x5
+ 340 0032 49       		.uleb128 0x49
+ 341 0033 13       		.uleb128 0x13
+ 342 0034 00       		.byte	0
+ 343 0035 00       		.byte	0
+ 344 0036 05       		.uleb128 0x5
+ 345 0037 35       		.uleb128 0x35
+ 346 0038 00       		.byte	0
+ 347 0039 49       		.uleb128 0x49
+ 348 003a 13       		.uleb128 0x13
+ 349 003b 00       		.byte	0
+ 350 003c 00       		.byte	0
+ 351 003d 06       		.uleb128 0x6
+ 352 003e 2E       		.uleb128 0x2e
+ 353 003f 01       		.byte	0x1
+ 354 0040 3F       		.uleb128 0x3f
+ 355 0041 19       		.uleb128 0x19
+ 356 0042 03       		.uleb128 0x3
+ 357 0043 0E       		.uleb128 0xe
+ 358 0044 3A       		.uleb128 0x3a
+ 359 0045 0B       		.uleb128 0xb
+ 360 0046 3B       		.uleb128 0x3b
+ 361 0047 0B       		.uleb128 0xb
+ 362 0048 27       		.uleb128 0x27
+ 363 0049 19       		.uleb128 0x19
+ 364 004a 11       		.uleb128 0x11
+ 365 004b 01       		.uleb128 0x1
+ 366 004c 12       		.uleb128 0x12
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 10
+
+
+ 367 004d 06       		.uleb128 0x6
+ 368 004e 40       		.uleb128 0x40
+ 369 004f 18       		.uleb128 0x18
+ 370 0050 9742     		.uleb128 0x2117
+ 371 0052 19       		.uleb128 0x19
+ 372 0053 01       		.uleb128 0x1
+ 373 0054 13       		.uleb128 0x13
+ 374 0055 00       		.byte	0
+ 375 0056 00       		.byte	0
+ 376 0057 07       		.uleb128 0x7
+ 377 0058 05       		.uleb128 0x5
+ 378 0059 00       		.byte	0
+ 379 005a 03       		.uleb128 0x3
+ 380 005b 0E       		.uleb128 0xe
+ 381 005c 3A       		.uleb128 0x3a
+ 382 005d 0B       		.uleb128 0xb
+ 383 005e 3B       		.uleb128 0x3b
+ 384 005f 0B       		.uleb128 0xb
+ 385 0060 49       		.uleb128 0x49
+ 386 0061 13       		.uleb128 0x13
+ 387 0062 02       		.uleb128 0x2
+ 388 0063 17       		.uleb128 0x17
+ 389 0064 00       		.byte	0
+ 390 0065 00       		.byte	0
+ 391 0066 08       		.uleb128 0x8
+ 392 0067 34       		.uleb128 0x34
+ 393 0068 00       		.byte	0
+ 394 0069 03       		.uleb128 0x3
+ 395 006a 0E       		.uleb128 0xe
+ 396 006b 3A       		.uleb128 0x3a
+ 397 006c 0B       		.uleb128 0xb
+ 398 006d 3B       		.uleb128 0x3b
+ 399 006e 0B       		.uleb128 0xb
+ 400 006f 49       		.uleb128 0x49
+ 401 0070 13       		.uleb128 0x13
+ 402 0071 02       		.uleb128 0x2
+ 403 0072 17       		.uleb128 0x17
+ 404 0073 00       		.byte	0
+ 405 0074 00       		.byte	0
+ 406 0075 09       		.uleb128 0x9
+ 407 0076 2E       		.uleb128 0x2e
+ 408 0077 00       		.byte	0
+ 409 0078 3F       		.uleb128 0x3f
+ 410 0079 19       		.uleb128 0x19
+ 411 007a 03       		.uleb128 0x3
+ 412 007b 0E       		.uleb128 0xe
+ 413 007c 3A       		.uleb128 0x3a
+ 414 007d 0B       		.uleb128 0xb
+ 415 007e 3B       		.uleb128 0x3b
+ 416 007f 0B       		.uleb128 0xb
+ 417 0080 27       		.uleb128 0x27
+ 418 0081 19       		.uleb128 0x19
+ 419 0082 49       		.uleb128 0x49
+ 420 0083 13       		.uleb128 0x13
+ 421 0084 11       		.uleb128 0x11
+ 422 0085 01       		.uleb128 0x1
+ 423 0086 12       		.uleb128 0x12
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 11
+
+
+ 424 0087 06       		.uleb128 0x6
+ 425 0088 40       		.uleb128 0x40
+ 426 0089 18       		.uleb128 0x18
+ 427 008a 9742     		.uleb128 0x2117
+ 428 008c 19       		.uleb128 0x19
+ 429 008d 00       		.byte	0
+ 430 008e 00       		.byte	0
+ 431 008f 00       		.byte	0
+ 432              		.section	.debug_loc,"",%progbits
+ 433              	.Ldebug_loc0:
+ 434              	.LLST0:
+ 435 0000 00000000 		.4byte	.LVL0
+ 436 0004 0C000000 		.4byte	.LVL3
+ 437 0008 0100     		.2byte	0x1
+ 438 000a 50       		.byte	0x50
+ 439 000b 0C000000 		.4byte	.LVL3
+ 440 000f 18000000 		.4byte	.LFE0
+ 441 0013 0400     		.2byte	0x4
+ 442 0015 F3       		.byte	0xf3
+ 443 0016 01       		.uleb128 0x1
+ 444 0017 50       		.byte	0x50
+ 445 0018 9F       		.byte	0x9f
+ 446 0019 00000000 		.4byte	0
+ 447 001d 00000000 		.4byte	0
+ 448              	.LLST1:
+ 449 0021 04000000 		.4byte	.LVL1
+ 450 0025 08000000 		.4byte	.LVL2
+ 451 0029 0500     		.2byte	0x5
+ 452 002b 73       		.byte	0x73
+ 453 002c 00       		.sleb128 0
+ 454 002d 3F       		.byte	0x3f
+ 455 002e 1A       		.byte	0x1a
+ 456 002f 9F       		.byte	0x9f
+ 457 0030 00000000 		.4byte	0
+ 458 0034 00000000 		.4byte	0
+ 459              	.LLST2:
+ 460 0038 00000000 		.4byte	.LVL4
+ 461 003c 06000000 		.4byte	.LVL5
+ 462 0040 0100     		.2byte	0x1
+ 463 0042 50       		.byte	0x50
+ 464 0043 06000000 		.4byte	.LVL5
+ 465 0047 34000000 		.4byte	.LFE1
+ 466 004b 0400     		.2byte	0x4
+ 467 004d F3       		.byte	0xf3
+ 468 004e 01       		.uleb128 0x1
+ 469 004f 50       		.byte	0x50
+ 470 0050 9F       		.byte	0x9f
+ 471 0051 00000000 		.4byte	0
+ 472 0055 00000000 		.4byte	0
+ 473              		.section	.debug_aranges,"",%progbits
+ 474 0000 34000000 		.4byte	0x34
+ 475 0004 0200     		.2byte	0x2
+ 476 0006 00000000 		.4byte	.Ldebug_info0
+ 477 000a 04       		.byte	0x4
+ 478 000b 00       		.byte	0
+ 479 000c 0000     		.2byte	0
+ 480 000e 0000     		.2byte	0
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 12
+
+
+ 481 0010 00000000 		.4byte	.LFB0
+ 482 0014 18000000 		.4byte	.LFE0-.LFB0
+ 483 0018 00000000 		.4byte	.LFB1
+ 484 001c 34000000 		.4byte	.LFE1-.LFB1
+ 485 0020 00000000 		.4byte	.LFB2
+ 486 0024 0C000000 		.4byte	.LFE2-.LFB2
+ 487 0028 00000000 		.4byte	.LFB3
+ 488 002c 0C000000 		.4byte	.LFE3-.LFB3
+ 489 0030 00000000 		.4byte	0
+ 490 0034 00000000 		.4byte	0
+ 491              		.section	.debug_ranges,"",%progbits
+ 492              	.Ldebug_ranges0:
+ 493 0000 00000000 		.4byte	.LFB0
+ 494 0004 18000000 		.4byte	.LFE0
+ 495 0008 00000000 		.4byte	.LFB1
+ 496 000c 34000000 		.4byte	.LFE1
+ 497 0010 00000000 		.4byte	.LFB2
+ 498 0014 0C000000 		.4byte	.LFE2
+ 499 0018 00000000 		.4byte	.LFB3
+ 500 001c 0C000000 		.4byte	.LFE3
+ 501 0020 00000000 		.4byte	0
+ 502 0024 00000000 		.4byte	0
+ 503              		.section	.debug_line,"",%progbits
+ 504              	.Ldebug_line0:
+ 505 0000 93000000 		.section	.debug_str,"MS",%progbits,1
+ 505      02004400 
+ 505      00000201 
+ 505      FB0E0D00 
+ 505      01010101 
+ 506              	.LASF15:
+ 507 0000 436F6C75 		.ascii	"Columns_SetDriveMode\000"
+ 507      6D6E735F 
+ 507      53657444 
+ 507      72697665 
+ 507      4D6F6465 
+ 508              	.LASF16:
+ 509 0015 76616C75 		.ascii	"value\000"
+ 509      6500
+ 510              	.LASF23:
+ 511 001b 73746174 		.ascii	"staticBits\000"
+ 511      69634269 
+ 511      747300
+ 512              	.LASF9:
+ 513 0026 666C6F61 		.ascii	"float\000"
+ 513      7400
+ 514              	.LASF7:
+ 515 002c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 515      206C6F6E 
+ 515      6720756E 
+ 515      7369676E 
+ 515      65642069 
+ 516              	.LASF1:
+ 517 0043 756E7369 		.ascii	"unsigned char\000"
+ 517      676E6564 
+ 517      20636861 
+ 517      7200
+ 518              	.LASF13:
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 13
+
+
+ 519 0051 72656738 		.ascii	"reg8\000"
+ 519      00
+ 520              	.LASF5:
+ 521 0056 6C6F6E67 		.ascii	"long unsigned int\000"
+ 521      20756E73 
+ 521      69676E65 
+ 521      6420696E 
+ 521      7400
+ 522              	.LASF3:
+ 523 0068 73686F72 		.ascii	"short unsigned int\000"
+ 523      7420756E 
+ 523      7369676E 
+ 523      65642069 
+ 523      6E7400
+ 524              	.LASF22:
+ 525 007b 443A5C50 		.ascii	"D:\\Projects\\PSoC\\AdvancedMicrocontrollers\\Keybo"
+ 525      726F6A65 
+ 525      6374735C 
+ 525      50536F43 
+ 525      5C416476 
+ 526 00aa 6172642E 		.ascii	"ard.cydsn\000"
+ 526      63796473 
+ 526      6E00
+ 527              	.LASF10:
+ 528 00b4 646F7562 		.ascii	"double\000"
+ 528      6C6500
+ 529              	.LASF8:
+ 530 00bb 756E7369 		.ascii	"unsigned int\000"
+ 530      676E6564 
+ 530      20696E74 
+ 530      00
+ 531              	.LASF19:
+ 532 00c8 436F6C75 		.ascii	"Columns_ReadDataReg\000"
+ 532      6D6E735F 
+ 532      52656164 
+ 532      44617461 
+ 532      52656700 
+ 533              	.LASF20:
+ 534 00dc 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 534      43313120 
+ 534      352E342E 
+ 534      31203230 
+ 534      31363036 
+ 535 010f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 535      20726576 
+ 535      6973696F 
+ 535      6E203233 
+ 535      37373135 
+ 536 0142 73202D66 		.ascii	"s -ffunction-sections -ffat-lto-objects\000"
+ 536      66756E63 
+ 536      74696F6E 
+ 536      2D736563 
+ 536      74696F6E 
+ 537              	.LASF17:
+ 538 016a 6D6F6465 		.ascii	"mode\000"
+ 538      00
+ 539              	.LASF6:
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccS3hOIx.s 			page 14
+
+
+ 540 016f 6C6F6E67 		.ascii	"long long int\000"
+ 540      206C6F6E 
+ 540      6720696E 
+ 540      7400
+ 541              	.LASF11:
+ 542 017d 63686172 		.ascii	"char\000"
+ 542      00
+ 543              	.LASF2:
+ 544 0182 73686F72 		.ascii	"short int\000"
+ 544      7420696E 
+ 544      7400
+ 545              	.LASF12:
+ 546 018c 75696E74 		.ascii	"uint8\000"
+ 546      3800
+ 547              	.LASF21:
+ 548 0192 47656E65 		.ascii	"Generated_Source\\PSoC5\\Columns.c\000"
+ 548      72617465 
+ 548      645F536F 
+ 548      75726365 
+ 548      5C50536F 
+ 549              	.LASF4:
+ 550 01b3 6C6F6E67 		.ascii	"long int\000"
+ 550      20696E74 
+ 550      00
+ 551              	.LASF0:
+ 552 01bc 7369676E 		.ascii	"signed char\000"
+ 552      65642063 
+ 552      68617200 
+ 553              	.LASF18:
+ 554 01c8 436F6C75 		.ascii	"Columns_Read\000"
+ 554      6D6E735F 
+ 554      52656164 
+ 554      00
+ 555              	.LASF14:
+ 556 01d5 436F6C75 		.ascii	"Columns_Write\000"
+ 556      6D6E735F 
+ 556      57726974 
+ 556      6500
+ 557              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
