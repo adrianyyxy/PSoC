@@ -2,7 +2,7 @@
 --	Conversion of Keyboard.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Oct 01 20:57:54 2021
+--	Sat Oct 02 14:11:50 2021
 --
 
 USE cypress.cypress.all;
@@ -221,7 +221,7 @@ Rows:cy_psoc3_pins_v1_10
 		out_clock_en=>tmpOE__Columns_net_3,
 		out_reset=>zero,
 		interrupt=>Net_10);
-isr_Start:cy_isr_v1_0
+isr_Keyboard:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
 	PORT MAP(int_signal=>Net_10);
@@ -301,7 +301,7 @@ isr_Start:cy_isr_v1_0
 		out_clock_en=>tmpOE__Columns_net_3,
 		out_reset=>zero,
 		interrupt=>\LCD:tmpINTERRUPT_0__LCDPort_net_0\);
-isr_Cambio:cy_isr_v1_0
+isr_Iteration:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
 	PORT MAP(int_signal=>Net_11);

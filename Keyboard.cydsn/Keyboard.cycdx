@@ -63,8 +63,8 @@
   <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Rows" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Columns" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="isr_Start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="isr_Cambio" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="isr_Keyboard" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="isr_Iteration" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="LCD" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="LCDPort" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>

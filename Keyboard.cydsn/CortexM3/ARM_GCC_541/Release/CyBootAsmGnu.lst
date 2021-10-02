@@ -11521,25 +11521,25 @@ ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 1
 ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 193
 
 
- 215              	/* isr_Start */
- 216              	.set isr_Start__INTC_CLR_EN_REG, CYREG_NVIC_CLRENA0
- 217              	.set isr_Start__INTC_CLR_PD_REG, CYREG_NVIC_CLRPEND0
- 218              	.set isr_Start__INTC_MASK, 0x80
- 219              	.set isr_Start__INTC_NUMBER, 7
- 220              	.set isr_Start__INTC_PRIOR_NUM, 7
- 221              	.set isr_Start__INTC_PRIOR_REG, CYREG_NVIC_PRI_7
- 222              	.set isr_Start__INTC_SET_EN_REG, CYREG_NVIC_SETENA0
- 223              	.set isr_Start__INTC_SET_PD_REG, CYREG_NVIC_SETPEND0
+ 215              	/* isr_Keyboard */
+ 216              	.set isr_Keyboard__INTC_CLR_EN_REG, CYREG_NVIC_CLRENA0
+ 217              	.set isr_Keyboard__INTC_CLR_PD_REG, CYREG_NVIC_CLRPEND0
+ 218              	.set isr_Keyboard__INTC_MASK, 0x80
+ 219              	.set isr_Keyboard__INTC_NUMBER, 7
+ 220              	.set isr_Keyboard__INTC_PRIOR_NUM, 7
+ 221              	.set isr_Keyboard__INTC_PRIOR_REG, CYREG_NVIC_PRI_7
+ 222              	.set isr_Keyboard__INTC_SET_EN_REG, CYREG_NVIC_SETENA0
+ 223              	.set isr_Keyboard__INTC_SET_PD_REG, CYREG_NVIC_SETPEND0
  224              	
- 225              	/* isr_Cambio */
- 226              	.set isr_Cambio__INTC_CLR_EN_REG, CYREG_NVIC_CLRENA0
- 227              	.set isr_Cambio__INTC_CLR_PD_REG, CYREG_NVIC_CLRPEND0
- 228              	.set isr_Cambio__INTC_MASK, 0x01
- 229              	.set isr_Cambio__INTC_NUMBER, 0
- 230              	.set isr_Cambio__INTC_PRIOR_NUM, 7
- 231              	.set isr_Cambio__INTC_PRIOR_REG, CYREG_NVIC_PRI_0
- 232              	.set isr_Cambio__INTC_SET_EN_REG, CYREG_NVIC_SETENA0
- 233              	.set isr_Cambio__INTC_SET_PD_REG, CYREG_NVIC_SETPEND0
+ 225              	/* isr_Iteration */
+ 226              	.set isr_Iteration__INTC_CLR_EN_REG, CYREG_NVIC_CLRENA0
+ 227              	.set isr_Iteration__INTC_CLR_PD_REG, CYREG_NVIC_CLRPEND0
+ 228              	.set isr_Iteration__INTC_MASK, 0x01
+ 229              	.set isr_Iteration__INTC_NUMBER, 0
+ 230              	.set isr_Iteration__INTC_PRIOR_NUM, 7
+ 231              	.set isr_Iteration__INTC_PRIOR_REG, CYREG_NVIC_PRI_0
+ 232              	.set isr_Iteration__INTC_SET_EN_REG, CYREG_NVIC_SETENA0
+ 233              	.set isr_Iteration__INTC_SET_PD_REG, CYREG_NVIC_SETPEND0
  234              	
  235              	/* Miscellaneous */
  236              	.set BCLK__BUS_CLK__HZ, 24000000

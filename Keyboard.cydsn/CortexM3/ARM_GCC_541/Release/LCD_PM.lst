@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
   12:Generated_Source\PSoC5/LCD_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
   13:Generated_Source\PSoC5/LCD_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
   14:Generated_Source\PSoC5/LCD_PM.c **** * the software package with which this file was provided.
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 2
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 2
 
 
   15:Generated_Source\PSoC5/LCD_PM.c **** *******************************************************************************/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
   55              		.global	LCD_Sleep
   56              		.thumb
   57              		.thumb_func
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 3
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 3
 
 
   58              		.type	LCD_Sleep, %function
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
   87              		.type	LCD_Wakeup, %function
   88              	LCD_Wakeup:
   89              	.LFB3:
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 4
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 4
 
 
   83:Generated_Source\PSoC5/LCD_PM.c **** }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  113              		.set	.LANCHOR0,. + 0
  114              		.type	LCD_backup, %object
  115              		.size	LCD_backup, 1
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 5
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 5
 
 
  116              	LCD_backup:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  170 005f 05       		.byte	0x5
  171 0060 696E7400 		.ascii	"int\000"
  172 0064 02       		.uleb128 0x2
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 6
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 6
 
 
  173 0065 04       		.byte	0x4
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  227 00cc 10000000 		.4byte	.LASF16
  228 00d0 01       		.byte	0x1
  229 00d1 4E       		.byte	0x4e
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 7
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 7
 
 
  230 00d2 00000000 		.4byte	.LFB2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  284 0006 0B       		.uleb128 0xb
  285 0007 03       		.uleb128 0x3
  286 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 8
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 8
 
 
  287 0009 1B       		.uleb128 0x1b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  341 003f 01       		.uleb128 0x1
  342 0040 13       		.uleb128 0x13
  343 0041 00       		.byte	0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 9
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 9
 
 
  344 0042 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  398 0078 06       		.uleb128 0x6
  399 0079 40       		.uleb128 0x40
  400 007a 18       		.uleb128 0x18
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 10
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 10
 
 
  401 007b 9742     		.uleb128 0x2117
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  455 00b6 00       		.byte	0
  456 00b7 0D       		.uleb128 0xd
  457 00b8 34       		.uleb128 0x34
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 11
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 11
 
 
  458 00b9 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  512 000c 14000000 		.4byte	.LFE2
  513 0010 00000000 		.4byte	.LFB3
  514 0014 14000000 		.4byte	.LFE3
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 12
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 12
 
 
  515 0018 00000000 		.4byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  539 008f 73686F72 		.ascii	"short unsigned int\000"
  539      7420756E 
  539      7369676E 
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 13
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 13
 
 
  539      65642069 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 1
  560 01ad 4C43445F 		.ascii	"LCD_BACKUP_STRUCT\000"
  560      4241434B 
  560      55505F53 
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccE69C33.s 			page 14
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccsCHwtI.s 			page 14
 
 
  560      54525543 

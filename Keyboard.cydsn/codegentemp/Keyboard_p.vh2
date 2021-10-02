@@ -1,5 +1,5 @@
 -- Project:   Keyboard
--- Generated: 10/01/2021 20:57:54
+-- Generated: 10/02/2021 14:11:50
 -- PSoC Creator  4.4
 
 ENTITY Keyboard IS
@@ -802,7 +802,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    isr_Start:interrupt
+    isr_Keyboard:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
@@ -810,7 +810,7 @@ BEGIN
             interrupt => Net_10,
             clock => ClockBlock_BUS_CLK);
 
-    isr_Cambio:interrupt
+    isr_Iteration:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)

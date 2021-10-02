@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: isr_Start.c  
+* File Name: isr_Iteration.c  
 * Version 1.70
 *
 *  Description:
@@ -18,15 +18,15 @@
 
 #include <cydevice_trm.h>
 #include <CyLib.h>
-#include <isr_Start.h>
+#include <isr_Iteration.h>
 #include "cyapicallbacks.h"
 
-#if !defined(isr_Start__REMOVED) /* Check for removal by optimization */
+#if !defined(isr_Iteration__REMOVED) /* Check for removal by optimization */
 
 /*******************************************************************************
 *  Place your includes, defines and code here 
 ********************************************************************************/
-/* `#START isr_Start_intc` */
+/* `#START isr_Iteration_intc` */
 
 /* `#END` */
 
@@ -42,7 +42,7 @@ CY_ISR_PROTO(IntDefaultHandler);
 
 
 /*******************************************************************************
-* Function Name: isr_Start_Start
+* Function Name: isr_Iteration_Start
 ********************************************************************************
 *
 * Summary:
@@ -58,24 +58,24 @@ CY_ISR_PROTO(IntDefaultHandler);
 *   None
 *
 *******************************************************************************/
-void isr_Start_Start(void)
+void isr_Iteration_Start(void)
 {
     /* For all we know the interrupt is active. */
-    isr_Start_Disable();
+    isr_Iteration_Disable();
 
-    /* Set the ISR to point to the isr_Start Interrupt. */
-    isr_Start_SetVector(&isr_Start_Interrupt);
+    /* Set the ISR to point to the isr_Iteration Interrupt. */
+    isr_Iteration_SetVector(&isr_Iteration_Interrupt);
 
     /* Set the priority. */
-    isr_Start_SetPriority((uint8)isr_Start_INTC_PRIOR_NUMBER);
+    isr_Iteration_SetPriority((uint8)isr_Iteration_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    isr_Start_Enable();
+    isr_Iteration_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_StartEx
+* Function Name: isr_Iteration_StartEx
 ********************************************************************************
 *
 * Summary:
@@ -101,24 +101,24 @@ void isr_Start_Start(void)
 *   None
 *
 *******************************************************************************/
-void isr_Start_StartEx(cyisraddress address)
+void isr_Iteration_StartEx(cyisraddress address)
 {
     /* For all we know the interrupt is active. */
-    isr_Start_Disable();
+    isr_Iteration_Disable();
 
-    /* Set the ISR to point to the isr_Start Interrupt. */
-    isr_Start_SetVector(address);
+    /* Set the ISR to point to the isr_Iteration Interrupt. */
+    isr_Iteration_SetVector(address);
 
     /* Set the priority. */
-    isr_Start_SetPriority((uint8)isr_Start_INTC_PRIOR_NUMBER);
+    isr_Iteration_SetPriority((uint8)isr_Iteration_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    isr_Start_Enable();
+    isr_Iteration_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_Stop
+* Function Name: isr_Iteration_Stop
 ********************************************************************************
 *
 * Summary:
@@ -131,22 +131,22 @@ void isr_Start_StartEx(cyisraddress address)
 *   None
 *
 *******************************************************************************/
-void isr_Start_Stop(void)
+void isr_Iteration_Stop(void)
 {
     /* Disable this interrupt. */
-    isr_Start_Disable();
+    isr_Iteration_Disable();
 
     /* Set the ISR to point to the passive one. */
-    isr_Start_SetVector(&IntDefaultHandler);
+    isr_Iteration_SetVector(&IntDefaultHandler);
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_Interrupt
+* Function Name: isr_Iteration_Interrupt
 ********************************************************************************
 *
 * Summary:
-*   The default Interrupt Service Routine for isr_Start.
+*   The default Interrupt Service Routine for isr_Iteration.
 *
 *   Add custom code between the coments to keep the next version of this file
 *   from over writting your code.
@@ -157,27 +157,27 @@ void isr_Start_Stop(void)
 *   None
 *
 *******************************************************************************/
-CY_ISR(isr_Start_Interrupt)
+CY_ISR(isr_Iteration_Interrupt)
 {
-    #ifdef isr_Start_INTERRUPT_INTERRUPT_CALLBACK
-        isr_Start_Interrupt_InterruptCallback();
-    #endif /* isr_Start_INTERRUPT_INTERRUPT_CALLBACK */ 
+    #ifdef isr_Iteration_INTERRUPT_INTERRUPT_CALLBACK
+        isr_Iteration_Interrupt_InterruptCallback();
+    #endif /* isr_Iteration_INTERRUPT_INTERRUPT_CALLBACK */ 
 
     /*  Place your Interrupt code here. */
-    /* `#START isr_Start_Interrupt` */
+    /* `#START isr_Iteration_Interrupt` */
 
     /* `#END` */
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_SetVector
+* Function Name: isr_Iteration_SetVector
 ********************************************************************************
 *
 * Summary:
-*   Change the ISR vector for the Interrupt. Note calling isr_Start_Start
+*   Change the ISR vector for the Interrupt. Note calling isr_Iteration_Start
 *   will override any effect this method would have had. To set the vector 
-*   before the component has been started use isr_Start_StartEx instead.
+*   before the component has been started use isr_Iteration_StartEx instead.
 * 
 *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
 *   used to provide consistent definition across compilers:
@@ -197,18 +197,18 @@ CY_ISR(isr_Start_Interrupt)
 *   None
 *
 *******************************************************************************/
-void isr_Start_SetVector(cyisraddress address)
+void isr_Iteration_SetVector(cyisraddress address)
 {
     cyisraddress * ramVectorTable;
 
     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
 
-    ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_Start__INTC_NUMBER] = address;
+    ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_Iteration__INTC_NUMBER] = address;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_GetVector
+* Function Name: isr_Iteration_GetVector
 ********************************************************************************
 *
 * Summary:
@@ -221,26 +221,26 @@ void isr_Start_SetVector(cyisraddress address)
 *   Address of the ISR in the interrupt vector table.
 *
 *******************************************************************************/
-cyisraddress isr_Start_GetVector(void)
+cyisraddress isr_Iteration_GetVector(void)
 {
     cyisraddress * ramVectorTable;
 
     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
 
-    return ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_Start__INTC_NUMBER];
+    return ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_Iteration__INTC_NUMBER];
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_SetPriority
+* Function Name: isr_Iteration_SetPriority
 ********************************************************************************
 *
 * Summary:
 *   Sets the Priority of the Interrupt. 
 *
-*   Note calling isr_Start_Start or isr_Start_StartEx will 
+*   Note calling isr_Iteration_Start or isr_Iteration_StartEx will 
 *   override any effect this API would have had. This API should only be called
-*   after isr_Start_Start or isr_Start_StartEx has been called. 
+*   after isr_Iteration_Start or isr_Iteration_StartEx has been called. 
 *   To set the initial priority for the component, use the Design-Wide Resources
 *   Interrupt Editor.
 *
@@ -255,14 +255,14 @@ cyisraddress isr_Start_GetVector(void)
 *   None
 *
 *******************************************************************************/
-void isr_Start_SetPriority(uint8 priority)
+void isr_Iteration_SetPriority(uint8 priority)
 {
-    *isr_Start_INTC_PRIOR = priority << 5;
+    *isr_Iteration_INTC_PRIOR = priority << 5;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_GetPriority
+* Function Name: isr_Iteration_GetPriority
 ********************************************************************************
 *
 * Summary:
@@ -277,19 +277,19 @@ void isr_Start_SetPriority(uint8 priority)
 *    PSoC 4: Priority is from 0 to 3.
 *
 *******************************************************************************/
-uint8 isr_Start_GetPriority(void)
+uint8 isr_Iteration_GetPriority(void)
 {
     uint8 priority;
 
 
-    priority = *isr_Start_INTC_PRIOR >> 5;
+    priority = *isr_Iteration_INTC_PRIOR >> 5;
 
     return priority;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_Enable
+* Function Name: isr_Iteration_Enable
 ********************************************************************************
 *
 * Summary:
@@ -304,15 +304,15 @@ uint8 isr_Start_GetPriority(void)
 *   None
 *
 *******************************************************************************/
-void isr_Start_Enable(void)
+void isr_Iteration_Enable(void)
 {
     /* Enable the general interrupt. */
-    *isr_Start_INTC_SET_EN = isr_Start__INTC_MASK;
+    *isr_Iteration_INTC_SET_EN = isr_Iteration__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_GetState
+* Function Name: isr_Iteration_GetState
 ********************************************************************************
 *
 * Summary:
@@ -325,15 +325,15 @@ void isr_Start_Enable(void)
 *   1 if enabled, 0 if disabled.
 *
 *******************************************************************************/
-uint8 isr_Start_GetState(void)
+uint8 isr_Iteration_GetState(void)
 {
     /* Get the state of the general interrupt. */
-    return ((*isr_Start_INTC_SET_EN & (uint32)isr_Start__INTC_MASK) != 0u) ? 1u:0u;
+    return ((*isr_Iteration_INTC_SET_EN & (uint32)isr_Iteration__INTC_MASK) != 0u) ? 1u:0u;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_Disable
+* Function Name: isr_Iteration_Disable
 ********************************************************************************
 *
 * Summary:
@@ -346,15 +346,15 @@ uint8 isr_Start_GetState(void)
 *   None
 *
 *******************************************************************************/
-void isr_Start_Disable(void)
+void isr_Iteration_Disable(void)
 {
     /* Disable the general interrupt. */
-    *isr_Start_INTC_CLR_EN = isr_Start__INTC_MASK;
+    *isr_Iteration_INTC_CLR_EN = isr_Iteration__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_SetPending
+* Function Name: isr_Iteration_SetPending
 ********************************************************************************
 *
 * Summary:
@@ -373,14 +373,14 @@ void isr_Start_Disable(void)
 *   interrupts).
 *
 *******************************************************************************/
-void isr_Start_SetPending(void)
+void isr_Iteration_SetPending(void)
 {
-    *isr_Start_INTC_SET_PD = isr_Start__INTC_MASK;
+    *isr_Iteration_INTC_SET_PD = isr_Iteration__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_Start_ClearPending
+* Function Name: isr_Iteration_ClearPending
 ********************************************************************************
 *
 * Summary:
@@ -398,9 +398,9 @@ void isr_Start_SetPending(void)
 *   None
 *
 *******************************************************************************/
-void isr_Start_ClearPending(void)
+void isr_Iteration_ClearPending(void)
 {
-    *isr_Start_INTC_CLR_PD = isr_Start__INTC_MASK;
+    *isr_Iteration_INTC_CLR_PD = isr_Iteration__INTC_MASK;
 }
 
 #endif /* End check for removal by optimization */

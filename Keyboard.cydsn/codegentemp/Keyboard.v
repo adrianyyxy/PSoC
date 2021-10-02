@@ -1,6 +1,6 @@
 // ======================================================================
 // Keyboard.v generated from TopDesign.cysch
-// 10/01/2021 at 20:57
+// 10/02/2021 at 14:11
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -498,7 +498,7 @@ module top ;
 
 	cy_isr_v1_0
 		#(.int_type(2'b10))
-		isr_Start
+		isr_Keyboard
 		 (.int_signal(Net_10));
 
 
@@ -507,7 +507,7 @@ module top ;
 
 	cy_isr_v1_0
 		#(.int_type(2'b10))
-		isr_Cambio
+		isr_Iteration
 		 (.int_signal(Net_11));
 
 

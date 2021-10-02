@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
   28:Generated_Source\PSoC5/CySpc.c **** #define CY_SPC_CMD_WR_ROW                   (0x05u)
   29:Generated_Source\PSoC5/CySpc.c **** #define CY_SPC_CMD_WR_USER_NVL              (0x06u)
   30:Generated_Source\PSoC5/CySpc.c **** #define CY_SPC_CMD_PRG_ROW                  (0x07u)
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 2
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 2
 
 
   31:Generated_Source\PSoC5/CySpc.c **** #define CY_SPC_CMD_ER_SECTOR                (0x08u)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
   38              	.LVL0:
   75:Generated_Source\PSoC5/CySpc.c **** 
   76:Generated_Source\PSoC5/CySpc.c ****     CY_SPC_PM_ACT_REG  |= PM_SPC_PM_EN;
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 3
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 3
 
 
   39              		.loc 1 76 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
   77              		.cfi_offset 3, -8
   78              		.cfi_offset 14, -4
   92:Generated_Source\PSoC5/CySpc.c ****     /* Save current global interrupt enable and disable it */
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 4
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 4
 
 
   93:Generated_Source\PSoC5/CySpc.c ****     uint8 interruptState = CyEnterCriticalSection();
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  111:Generated_Source\PSoC5/CySpc.c **** *  \param uint8 size:
  112:Generated_Source\PSoC5/CySpc.c **** *   Number of bytes to read from the SPC.
  113:Generated_Source\PSoC5/CySpc.c **** *
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 5
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 5
 
 
  114:Generated_Source\PSoC5/CySpc.c **** * \return
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  149              	.LVL6:
  150 0022 F8E7     		b	.L11
  151              	.L14:
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 6
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 6
 
 
  152              		.loc 1 129 0 discriminator 2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  158:Generated_Source\PSoC5/CySpc.c **** *
  159:Generated_Source\PSoC5/CySpc.c **** *******************************************************************************/
  160:Generated_Source\PSoC5/CySpc.c **** cystatus CySpcLoadMultiByte(uint8 array, uint16 address, const uint8 buffer[], uint8 size)\
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 7
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 7
 
 
  161:Generated_Source\PSoC5/CySpc.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  215 0020 D426     		movs	r6, #212
  216 0022 2670     		strb	r6, [r4]
  177:Generated_Source\PSoC5/CySpc.c ****             CY_SPC_CPU_DATA_REG = CY_SPC_CMD_LD_MULTI_BYTE;
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 8
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 8
 
 
  217              		.loc 1 177 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  257              	.LVL16:
  258 0054 70BD     		pop	{r4, r5, r6, pc}
  259              	.LVL17:
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 9
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 9
 
 
  260              	.L24:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  293              	.LFB4:
  208:Generated_Source\PSoC5/CySpc.c **** 
  209:Generated_Source\PSoC5/CySpc.c **** 
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 10
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 10
 
 
  210:Generated_Source\PSoC5/CySpc.c **** /*******************************************************************************
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  311 000c B625     		movs	r5, #182
  312 000e 1D70     		strb	r5, [r3]
  247:Generated_Source\PSoC5/CySpc.c ****         CY_SPC_CPU_DATA_REG = CY_SPC_KEY_TWO(CY_SPC_CMD_LD_ROW);
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 11
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 11
 
 
  313              		.loc 1 247 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  267:Generated_Source\PSoC5/CySpc.c ****         status = CYRET_LOCKED;
  346              		.loc 1 267 0
  347 0036 0420     		movs	r0, #4
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 12
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 12
 
 
  348              	.LVL28:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  296:Generated_Source\PSoC5/CySpc.c **** *   flash row latch size with ECC disabled and EEPROM row latch size.
  297:Generated_Source\PSoC5/CySpc.c **** *
  298:Generated_Source\PSoC5/CySpc.c **** * \return
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 13
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 13
 
 
  299:Generated_Source\PSoC5/CySpc.c **** *  CYRET_STARTED
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  323:Generated_Source\PSoC5/CySpc.c ****         {
  324:Generated_Source\PSoC5/CySpc.c ****             CY_SPC_CPU_DATA_REG = array;
  325:Generated_Source\PSoC5/CySpc.c **** 
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 14
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 14
 
 
  326:Generated_Source\PSoC5/CySpc.c ****             /*******************************************************************
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  361:Generated_Source\PSoC5/CySpc.c ****             /*******************************************************************
  362:Generated_Source\PSoC5/CySpc.c ****             * If "Enable Error Correcting Code (ECC)" DWR option is disabled,
  363:Generated_Source\PSoC5/CySpc.c ****             * ECC section can be used for storing device configuration data
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 15
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 15
 
 
  364:Generated_Source\PSoC5/CySpc.c ****             * ("Store Configuration Data in ECC" DWR option is enabled) or for
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  386:Generated_Source\PSoC5/CySpc.c ****                     {
  449              		.loc 1 386 0 discriminator 3
  450 0052 202B     		cmp	r3, #32
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 16
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 16
 
 
  451              		.loc 1 388 0 discriminator 3
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  479              		.global	CySpcWriteRow
  480              		.thumb
  481              		.thumb_func
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 17
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 17
 
 
  482              		.type	CySpcWriteRow, %function
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  448:Generated_Source\PSoC5/CySpc.c ****         CY_SPC_CPU_DATA_REG = CY_SPC_KEY_ONE;
  501              		.loc 1 448 0
  502 000a 0C4C     		ldr	r4, .L58+4
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 18
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 18
 
 
  503 000c B626     		movs	r6, #182
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  467:Generated_Source\PSoC5/CySpc.c ****     {
  468:Generated_Source\PSoC5/CySpc.c ****         status = CYRET_LOCKED;
  537              		.loc 1 468 0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 19
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 19
 
 
  538 0030 0420     		movs	r0, #4
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  566              		@ args = 0, pretend = 0, frame = 0
  567              		@ frame_needed = 0, uses_anonymous_args = 0
  568              	.LVL54:
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 20
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 20
 
 
  569 0000 10B5     		push	{r4, lr}
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  514:Generated_Source\PSoC5/CySpc.c ****     else
  515:Generated_Source\PSoC5/CySpc.c ****     {
  516:Generated_Source\PSoC5/CySpc.c ****         status = CYRET_LOCKED;
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 21
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 21
 
 
  602              		.loc 1 516 0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  543:Generated_Source\PSoC5/CySpc.c **** *  CYRET_STARTED
  544:Generated_Source\PSoC5/CySpc.c **** *  CYRET_CANCELED
  545:Generated_Source\PSoC5/CySpc.c **** *  CYRET_LOCKED
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 22
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 22
 
 
  546:Generated_Source\PSoC5/CySpc.c **** *
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  565:Generated_Source\PSoC5/CySpc.c ****             CY_SPC_CPU_DATA_REG = LO8(address);
  664              		.loc 1 565 0
  665 0022 C9B2     		uxtb	r1, r1
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 23
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 23
 
 
  666              	.LVL62:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  702              		.global	CySpcGetTemp
  703              		.thumb
  704              		.thumb_func
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 24
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 24
 
 
  705              		.type	CySpcGetTemp, %function
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  614:Generated_Source\PSoC5/CySpc.c ****         CY_SPC_CPU_DATA_REG = CY_SPC_CMD_GET_TEMP;
  726              		.loc 1 614 0
  727 0012 0E21     		movs	r1, #14
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 25
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 25
 
 
  728 0014 1970     		strb	r1, [r3]
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  762              		.global	CySpcLock
  763              		.thumb
  764              		.thumb_func
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 26
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 26
 
 
  765              		.type	CySpcLock, %function
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  656:Generated_Source\PSoC5/CySpc.c ****         status = CYRET_SUCCESS;
  790              		.loc 1 656 0
  791 0010 1570     		strb	r5, [r2]
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 27
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 27
 
 
  792              	.LVL76:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  673:Generated_Source\PSoC5/CySpc.c **** 
  674:Generated_Source\PSoC5/CySpc.c ****         #endif  /* (CY_PSOC5) */
  675:Generated_Source\PSoC5/CySpc.c ****     }
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 28
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 28
 
 
  676:Generated_Source\PSoC5/CySpc.c **** 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  866              	.LVL82:
  697:Generated_Source\PSoC5/CySpc.c **** 
  698:Generated_Source\PSoC5/CySpc.c ****     /* Release the SPC object */
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 29
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 29
 
 
  699:Generated_Source\PSoC5/CySpc.c ****     SpcLockState = CY_SPC_UNLOCKED;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  716:Generated_Source\PSoC5/CySpc.c ****     #endif  /* (CY_PSOC5) */
  717:Generated_Source\PSoC5/CySpc.c **** 
  718:Generated_Source\PSoC5/CySpc.c ****     /* Exit critical section */
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 30
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 30
 
 
  719:Generated_Source\PSoC5/CySpc.c ****     CyExitCriticalSection(interruptState);
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  936 0004 9B07     		lsls	r3, r3, #30
  937 0006 08D5     		bpl	.L90
  739:Generated_Source\PSoC5/CySpc.c ****     {
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 31
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 31
 
 
  740:Generated_Source\PSoC5/CySpc.c ****         CY_SPC_CPU_DATA_REG = CY_SPC_KEY_ONE;
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  980              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
  981              		.file 3 "Generated_Source\\PSoC5\\CyLib.h"
  982              		.section	.debug_info,"",%progbits
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 32
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 32
 
 
  983              	.Ldebug_info0:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1037 006c 90010000 		.4byte	.LASF9
  1038 0070 02       		.byte	0x2
  1039 0071 E801     		.2byte	0x1e8
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 33
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 33
 
 
  1040 0073 2C000000 		.4byte	0x2c
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1094 00e7 00000000 		.4byte	.LFB0
  1095 00eb 24000000 		.4byte	.LFE0-.LFB0
  1096 00ef 01       		.uleb128 0x1
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 34
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 34
 
 
  1097 00f0 9C       		.byte	0x9c
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1151 0177 E9000000 		.4byte	.LASF24
  1152 017b 01       		.byte	0x1
  1153 017c 77       		.byte	0x77
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 35
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 35
 
 
  1154 017d 6B000000 		.4byte	0x6b
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1208 01f3 6B000000 		.4byte	0x6b
  1209 01f7 01       		.uleb128 0x1
  1210 01f8 53       		.byte	0x53
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 36
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 36
 
 
  1211 01f9 07       		.uleb128 0x7
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1265 0272 0C       		.uleb128 0xc
  1266 0273 6900     		.ascii	"i\000"
  1267 0275 01       		.byte	0x1
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 37
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 37
 
 
  1268 0276 F1       		.byte	0xf1
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1322 0300 83000000 		.4byte	0x83
  1323 0304 BD030000 		.4byte	.LLST18
  1324 0308 00       		.byte	0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 38
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 38
 
 
  1325 0309 12       		.uleb128 0x12
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1379 038b B0010000 		.4byte	.LASF27
  1380 038f 01       		.byte	0x1
  1381 0390 EC01     		.2byte	0x1ec
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 39
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 39
 
 
  1382 0392 6B000000 		.4byte	0x6b
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1436 0414 01       		.byte	0x1
  1437 0415 2702     		.2byte	0x227
  1438 0417 A4000000 		.4byte	0xa4
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 40
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 40
 
 
  1439 041b 77050000 		.4byte	.LLST26
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1493 04a8 18       		.uleb128 0x18
  1494 04a9 7A020000 		.4byte	.LASF42
  1495 04ad 01       		.byte	0x1
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 41
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 41
 
 
  1496 04ae B302     		.2byte	0x2b3
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1550 0533 F0010000 		.4byte	.LASF45
  1551 0537 03       		.byte	0x3
  1552 0538 7D       		.byte	0x7d
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 42
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 42
 
 
  1553 0539 1B       		.uleb128 0x1b
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1607 0029 04       		.uleb128 0x4
  1608 002a 16       		.uleb128 0x16
  1609 002b 00       		.byte	0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 43
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 43
 
 
  1610 002c 03       		.uleb128 0x3
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1664 0063 17       		.uleb128 0x17
  1665 0064 00       		.byte	0
  1666 0065 00       		.byte	0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 44
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 44
 
 
  1667 0066 08       		.uleb128 0x8
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1721 00a2 3B       		.uleb128 0x3b
  1722 00a3 0B       		.uleb128 0xb
  1723 00a4 49       		.uleb128 0x49
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 45
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 45
 
 
  1724 00a5 13       		.uleb128 0x13
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1778 00e0 3B       		.uleb128 0x3b
  1779 00e1 0B       		.uleb128 0xb
  1780 00e2 49       		.uleb128 0x49
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 46
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 46
 
 
  1781 00e3 13       		.uleb128 0x13
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1835 011a 14       		.uleb128 0x14
  1836 011b 05       		.uleb128 0x5
  1837 011c 00       		.byte	0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 47
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 47
 
 
  1838 011d 03       		.uleb128 0x3
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1892 0153 18       		.uleb128 0x18
  1893 0154 00       		.byte	0
  1894 0155 00       		.byte	0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 48
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 48
 
 
  1895 0156 18       		.uleb128 0x18
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  1949 018d 18       		.uleb128 0x18
  1950 018e 00       		.byte	0
  1951 018f 00       		.byte	0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 49
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 49
 
 
  1952 0190 1B       		.uleb128 0x1b
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2006 0056 3C000000 		.4byte	.LFE2
  2007 005a 0400     		.2byte	0x4
  2008 005c F3       		.byte	0xf3
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 50
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 50
 
 
  2009 005d 01       		.uleb128 0x1
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2063 00d1 5C000000 		.4byte	.LVL20
  2064 00d5 0100     		.2byte	0x1
  2065 00d7 50       		.byte	0x50
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 51
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 51
 
 
  2066 00d8 5C000000 		.4byte	.LVL20
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2120 015c 70       		.byte	0x70
  2121 015d 00       		.sleb128 0
  2122 015e 72       		.byte	0x72
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 52
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 52
 
 
  2123 015f 00       		.sleb128 0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2177 01d7 37       		.byte	0x37
  2178 01d8 9F       		.byte	0x9f
  2179 01d9 3C000000 		.4byte	.LVL30
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 53
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 53
 
 
  2180 01dd 48000000 		.4byte	.LFE4
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2234 0255 5E000000 		.4byte	.LVL44
  2235 0259 0400     		.2byte	0x4
  2236 025b F3       		.byte	0xf3
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 54
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 54
 
 
  2237 025c 01       		.uleb128 0x1
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2291 02db 01       		.uleb128 0x1
  2292 02dc 52       		.byte	0x52
  2293 02dd 9F       		.byte	0x9f
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 55
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 55
 
 
  2294 02de 3C000000 		.4byte	.LVL36
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2348 0363 0100     		.2byte	0x1
  2349 0365 50       		.byte	0x50
  2350 0366 00000000 		.4byte	0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 56
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 56
 
 
  2351 036a 00000000 		.4byte	0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2405 03e3 0200     		.2byte	0x2
  2406 03e5 74       		.byte	0x74
  2407 03e6 00       		.sleb128 0
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 57
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 57
 
 
  2408 03e7 26000000 		.4byte	.LVL49
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2462 0466 9F       		.byte	0x9f
  2463 0467 36000000 		.4byte	.LVL53
  2464 046b 40000000 		.4byte	.LFE6
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 58
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 58
 
 
  2465 046f 0100     		.2byte	0x1
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2519 04f0 22000000 		.4byte	.LVL61
  2520 04f4 0100     		.2byte	0x1
  2521 04f6 50       		.byte	0x50
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 59
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 59
 
 
  2522 04f7 22000000 		.4byte	.LVL61
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2576              	.LLST26:
  2577 0577 00000000 		.4byte	.LVL60
  2578 057b 36000000 		.4byte	.LVL67
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 60
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 60
 
 
  2579 057f 0200     		.2byte	0x2
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2633 0602 00000000 		.4byte	0
  2634              	.LLST29:
  2635 0606 00000000 		.4byte	.LVL74
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 61
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 61
 
 
  2636 060a 12000000 		.4byte	.LVL76
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2690 0695 00000000 		.4byte	0
  2691              		.section	.debug_aranges,"",%progbits
  2692 0000 7C000000 		.4byte	0x7c
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 62
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 62
 
 
  2693 0004 0200     		.2byte	0x2
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2747 0048 00000000 		.4byte	.LFB9
  2748 004c 34000000 		.4byte	.LFE9
  2749 0050 00000000 		.4byte	.LFB10
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 63
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 63
 
 
  2750 0054 40000000 		.4byte	.LFE10
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2777      5C416476 
  2778 009a 6172642E 		.ascii	"ard.cydsn\000"
  2778      63796473 
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 64
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 64
 
 
  2778      6E00
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2801              	.LASF51:
  2802 0196 5370634C 		.ascii	"SpcLockState\000"
  2802      6F636B53 
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 65
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 65
 
 
  2802      74617465 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2828 022e 43794578 		.ascii	"CyExitCriticalSection\000"
  2828      69744372 
  2828      69746963 
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 66
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 66
 
 
  2828      616C5365 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 1
  2852 02cd 73686F72 		.ascii	"short int\000"
  2852      7420696E 
  2852      7400
-ARM GAS  C:\Users\adria\AppData\Local\Temp\ccSaiGKL.s 			page 67
+ARM GAS  C:\Users\adria\AppData\Local\Temp\ccOYOSHk.s 			page 67
 
 
  2853              	.LASF38:

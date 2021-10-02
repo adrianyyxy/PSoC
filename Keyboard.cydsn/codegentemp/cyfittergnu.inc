@@ -212,25 +212,25 @@
 .set Columns__SHIFT, 4
 .set Columns__SLW, CYREG_PRT1_SLW
 
-/* isr_Start */
-.set isr_Start__INTC_CLR_EN_REG, CYREG_NVIC_CLRENA0
-.set isr_Start__INTC_CLR_PD_REG, CYREG_NVIC_CLRPEND0
-.set isr_Start__INTC_MASK, 0x80
-.set isr_Start__INTC_NUMBER, 7
-.set isr_Start__INTC_PRIOR_NUM, 7
-.set isr_Start__INTC_PRIOR_REG, CYREG_NVIC_PRI_7
-.set isr_Start__INTC_SET_EN_REG, CYREG_NVIC_SETENA0
-.set isr_Start__INTC_SET_PD_REG, CYREG_NVIC_SETPEND0
+/* isr_Keyboard */
+.set isr_Keyboard__INTC_CLR_EN_REG, CYREG_NVIC_CLRENA0
+.set isr_Keyboard__INTC_CLR_PD_REG, CYREG_NVIC_CLRPEND0
+.set isr_Keyboard__INTC_MASK, 0x80
+.set isr_Keyboard__INTC_NUMBER, 7
+.set isr_Keyboard__INTC_PRIOR_NUM, 7
+.set isr_Keyboard__INTC_PRIOR_REG, CYREG_NVIC_PRI_7
+.set isr_Keyboard__INTC_SET_EN_REG, CYREG_NVIC_SETENA0
+.set isr_Keyboard__INTC_SET_PD_REG, CYREG_NVIC_SETPEND0
 
-/* isr_Cambio */
-.set isr_Cambio__INTC_CLR_EN_REG, CYREG_NVIC_CLRENA0
-.set isr_Cambio__INTC_CLR_PD_REG, CYREG_NVIC_CLRPEND0
-.set isr_Cambio__INTC_MASK, 0x01
-.set isr_Cambio__INTC_NUMBER, 0
-.set isr_Cambio__INTC_PRIOR_NUM, 7
-.set isr_Cambio__INTC_PRIOR_REG, CYREG_NVIC_PRI_0
-.set isr_Cambio__INTC_SET_EN_REG, CYREG_NVIC_SETENA0
-.set isr_Cambio__INTC_SET_PD_REG, CYREG_NVIC_SETPEND0
+/* isr_Iteration */
+.set isr_Iteration__INTC_CLR_EN_REG, CYREG_NVIC_CLRENA0
+.set isr_Iteration__INTC_CLR_PD_REG, CYREG_NVIC_CLRPEND0
+.set isr_Iteration__INTC_MASK, 0x01
+.set isr_Iteration__INTC_NUMBER, 0
+.set isr_Iteration__INTC_PRIOR_NUM, 7
+.set isr_Iteration__INTC_PRIOR_REG, CYREG_NVIC_PRI_0
+.set isr_Iteration__INTC_SET_EN_REG, CYREG_NVIC_SETENA0
+.set isr_Iteration__INTC_SET_PD_REG, CYREG_NVIC_SETPEND0
 
 /* Miscellaneous */
 .set BCLK__BUS_CLK__HZ, 24000000

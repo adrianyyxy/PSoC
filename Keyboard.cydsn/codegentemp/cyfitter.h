@@ -212,25 +212,25 @@
 #define Columns__SHIFT 4u
 #define Columns__SLW CYREG_PRT1_SLW
 
-/* isr_Start */
-#define isr_Start__INTC_CLR_EN_REG CYREG_NVIC_CLRENA0
-#define isr_Start__INTC_CLR_PD_REG CYREG_NVIC_CLRPEND0
-#define isr_Start__INTC_MASK 0x80u
-#define isr_Start__INTC_NUMBER 7u
-#define isr_Start__INTC_PRIOR_NUM 7u
-#define isr_Start__INTC_PRIOR_REG CYREG_NVIC_PRI_7
-#define isr_Start__INTC_SET_EN_REG CYREG_NVIC_SETENA0
-#define isr_Start__INTC_SET_PD_REG CYREG_NVIC_SETPEND0
+/* isr_Keyboard */
+#define isr_Keyboard__INTC_CLR_EN_REG CYREG_NVIC_CLRENA0
+#define isr_Keyboard__INTC_CLR_PD_REG CYREG_NVIC_CLRPEND0
+#define isr_Keyboard__INTC_MASK 0x80u
+#define isr_Keyboard__INTC_NUMBER 7u
+#define isr_Keyboard__INTC_PRIOR_NUM 7u
+#define isr_Keyboard__INTC_PRIOR_REG CYREG_NVIC_PRI_7
+#define isr_Keyboard__INTC_SET_EN_REG CYREG_NVIC_SETENA0
+#define isr_Keyboard__INTC_SET_PD_REG CYREG_NVIC_SETPEND0
 
-/* isr_Cambio */
-#define isr_Cambio__INTC_CLR_EN_REG CYREG_NVIC_CLRENA0
-#define isr_Cambio__INTC_CLR_PD_REG CYREG_NVIC_CLRPEND0
-#define isr_Cambio__INTC_MASK 0x01u
-#define isr_Cambio__INTC_NUMBER 0u
-#define isr_Cambio__INTC_PRIOR_NUM 7u
-#define isr_Cambio__INTC_PRIOR_REG CYREG_NVIC_PRI_0
-#define isr_Cambio__INTC_SET_EN_REG CYREG_NVIC_SETENA0
-#define isr_Cambio__INTC_SET_PD_REG CYREG_NVIC_SETPEND0
+/* isr_Iteration */
+#define isr_Iteration__INTC_CLR_EN_REG CYREG_NVIC_CLRENA0
+#define isr_Iteration__INTC_CLR_PD_REG CYREG_NVIC_CLRPEND0
+#define isr_Iteration__INTC_MASK 0x01u
+#define isr_Iteration__INTC_NUMBER 0u
+#define isr_Iteration__INTC_PRIOR_NUM 7u
+#define isr_Iteration__INTC_PRIOR_REG CYREG_NVIC_PRI_0
+#define isr_Iteration__INTC_SET_EN_REG CYREG_NVIC_SETENA0
+#define isr_Iteration__INTC_SET_PD_REG CYREG_NVIC_SETPEND0
 
 /* Miscellaneous */
 #define BCLK__BUS_CLK__HZ 24000000U

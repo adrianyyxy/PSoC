@@ -1,7 +1,43 @@
---------------- Build Started: 10/01/2021 21:02:33 Project: Keyboard, Configuration: ARM GCC 5.4-2016-q2-update Release ---------------
-The code generation step is up to date.
+--------------- Build Started: 10/02/2021 14:11:47 Project: Keyboard, Configuration: ARM GCC 5.4-2016-q2-update Release ---------------
+cydsfit.exe -.appdatapath "C:\Users\adria\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p D:\Projects\PSoC\AdvancedMicrocontrollers\Keyboard.cydsn\Keyboard.cyprj -d CY8C5888LTI-LP097 -s D:\Projects\PSoC\AdvancedMicrocontrollers\Keyboard.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+HDL Generation...
+Synthesis...
+Tech Mapping...
+Analog Placement...
+Analog Routing...
+Analog Code Generation...
+Digital Placement...
+Digital Routing...
+Bitstream Generation...
+Bitstream Verification...
+Static timing analysis...
+API Generation...
+Dependency Generation...
+Cleanup...
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/main.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c main.c -o .\CortexM3\ARM_GCC_541\Release\main.o
-arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Release\Keyboard.a .\CortexM3\ARM_GCC_541\Release\Columns.o .\CortexM3\ARM_GCC_541\Release\Rows.o .\CortexM3\ARM_GCC_541\Release\LCD.o .\CortexM3\ARM_GCC_541\Release\LCD_PM.o .\CortexM3\ARM_GCC_541\Release\LCD_LCDPort.o .\CortexM3\ARM_GCC_541\Release\CyDmac.o .\CortexM3\ARM_GCC_541\Release\CyFlash.o .\CortexM3\ARM_GCC_541\Release\CyLib.o .\CortexM3\ARM_GCC_541\Release\cyPm.o .\CortexM3\ARM_GCC_541\Release\CySpc.o .\CortexM3\ARM_GCC_541\Release\cyutils.o .\CortexM3\ARM_GCC_541\Release\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Release\isr_Start.o .\CortexM3\ARM_GCC_541\Release\Timer.o .\CortexM3\ARM_GCC_541\Release\Timer_PM.o .\CortexM3\ARM_GCC_541\Release\Clock_1.o .\CortexM3\ARM_GCC_541\Release\isr_Cambio.o .\CortexM3\ARM_GCC_541\Release\CyBootAsmGnu.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/cyfitter_cfg.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\cyfitter_cfg.c -o .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/cymetadata.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\cymetadata.c -o .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/Columns.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\Columns.c -o .\CortexM3\ARM_GCC_541\Release\Columns.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/Rows.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\Rows.c -o .\CortexM3\ARM_GCC_541\Release\Rows.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/LCD.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\LCD.c -o .\CortexM3\ARM_GCC_541\Release\LCD.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/LCD_PM.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\LCD_PM.c -o .\CortexM3\ARM_GCC_541\Release\LCD_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/LCD_LCDPort.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\LCD_LCDPort.c -o .\CortexM3\ARM_GCC_541\Release\LCD_LCDPort.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/Cm3Start.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\Cm3Start.c -o .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/CyDmac.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\CyDmac.c -o .\CortexM3\ARM_GCC_541\Release\CyDmac.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/CyFlash.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\CyFlash.c -o .\CortexM3\ARM_GCC_541\Release\CyFlash.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/CyLib.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\CyLib.c -o .\CortexM3\ARM_GCC_541\Release\CyLib.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/cyPm.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\cyPm.c -o .\CortexM3\ARM_GCC_541\Release\cyPm.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/CySpc.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\CySpc.c -o .\CortexM3\ARM_GCC_541\Release\CySpc.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/cyutils.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\cyutils.c -o .\CortexM3\ARM_GCC_541\Release\cyutils.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/cy_em_eeprom.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\cy_em_eeprom.c -o .\CortexM3\ARM_GCC_541\Release\cy_em_eeprom.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/Timer.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\Timer.c -o .\CortexM3\ARM_GCC_541\Release\Timer.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/Timer_PM.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\Timer_PM.c -o .\CortexM3\ARM_GCC_541\Release\Timer_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/Clock_1.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\Clock_1.c -o .\CortexM3\ARM_GCC_541\Release\Clock_1.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/isr_Keyboard.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\isr_Keyboard.c -o .\CortexM3\ARM_GCC_541\Release\isr_Keyboard.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/isr_Iteration.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os -c Generated_Source\PSoC5\isr_Iteration.c -o .\CortexM3\ARM_GCC_541\Release\isr_Iteration.o
+arm-none-eabi-as.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=.\CortexM3\ARM_GCC_541\Release/CyBootAsmGnu.lst -g -W -o .\CortexM3\ARM_GCC_541\Release\CyBootAsmGnu.o Generated_Source\PSoC5\CyBootAsmGnu.s
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Release\Keyboard.a .\CortexM3\ARM_GCC_541\Release\Columns.o .\CortexM3\ARM_GCC_541\Release\Rows.o .\CortexM3\ARM_GCC_541\Release\LCD.o .\CortexM3\ARM_GCC_541\Release\LCD_PM.o .\CortexM3\ARM_GCC_541\Release\LCD_LCDPort.o .\CortexM3\ARM_GCC_541\Release\CyDmac.o .\CortexM3\ARM_GCC_541\Release\CyFlash.o .\CortexM3\ARM_GCC_541\Release\CyLib.o .\CortexM3\ARM_GCC_541\Release\cyPm.o .\CortexM3\ARM_GCC_541\Release\CySpc.o .\CortexM3\ARM_GCC_541\Release\cyutils.o .\CortexM3\ARM_GCC_541\Release\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Release\Timer.o .\CortexM3\ARM_GCC_541\Release\Timer_PM.o .\CortexM3\ARM_GCC_541\Release\Clock_1.o .\CortexM3\ARM_GCC_541\Release\isr_Keyboard.o .\CortexM3\ARM_GCC_541\Release\isr_Iteration.o .\CortexM3\ARM_GCC_541\Release\CyBootAsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_541\Release\Keyboard.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o D:\Projects\PSoC\AdvancedMicrocontrollers\Keyboard.cydsn\CortexM3\ARM_GCC_541\Release\Keyboard.elf .\CortexM3\ARM_GCC_541\Release\main.o .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o .\CortexM3\ARM_GCC_541\Release\cymetadata.o .\CortexM3\ARM_GCC_541\Release\Cm3Start.o .\CortexM3\ARM_GCC_541\Release\Keyboard.a "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Release\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_541\Release/Keyboard.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Os -ffat-lto-objects -Wl,--end-group
 cyelftool.exe -C D:\Projects\PSoC\AdvancedMicrocontrollers\Keyboard.cydsn\CortexM3\ARM_GCC_541\Release\Keyboard.elf --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
@@ -11,4 +47,4 @@ Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S D:\Projects\PSoC\AdvancedMicrocontrollers\Keyboard.cydsn\CortexM3\ARM_GCC_541\Release\Keyboard.elf
 Flash used: 2968 of 262144 bytes (1.1%).
 SRAM used: 2545 of 65536 bytes (3.9%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 10/01/2021 21:02:34 ---------------
+--------------- Build Succeeded: 10/02/2021 14:11:58 ---------------
