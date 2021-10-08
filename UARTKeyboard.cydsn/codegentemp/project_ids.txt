@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|172a001c-1e94-41cd-b6ae-880b7b70b585
+C:\Users\adria\OneDrive\Documentos\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|a0108bad-719e-47e1-ac27-dcf36ea123a0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|b59caf55-f261-4c5c-95d7-b463828b08b2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|9d0a9b59-a736-452c-abe7-c800781d5c08
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a8eca818-d15a-488b-b521-f8c9485a5a71
+D:\Projects\PSoC\AdvancedMicrocontrollers\UARTKeyboard.cydsn\UARTKeyboard.cyprj|9ebafbf1-cc32-4c86-ae95-6d53f4cd2156
